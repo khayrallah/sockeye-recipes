@@ -15,7 +15,7 @@ then run the following scripts:
 ## Installation
 First, clone this package: 
 ```bash
-git clone https://github.com/kevinduh/sockeye-recipes.git sockeye-recipes
+git clone https://github.com/khayrallah/sockeye-recipes.git sockeye-recipes
 ```
 
 We assume that Anaconda for Python virtual environments is available on the system.
@@ -99,7 +99,7 @@ Building NMT systems can be a tedious process involving lenghty experimentation 
 - train.sh is the main training script. Specify a new modeldir for each train.sh run. The hyperparms.txt file used in training will be saved in modeldir for future reference. 
 - At the end, your workingdir will have a single datadir containing multiple BPE'ed versions of the bitext, and multiple modeldir's. You can run tensorboard on all these modeldir's concurrently to compare learning curves.
 
-There are many options in Sockeye. Currently not all of them are used in sockeye-recipes; more will be added. See [sockeye/arguments.py](https://github.com/kevinduh/sockeye/blob/master/sockeye/arguments.py) for detailed explanations. 
+There are many options in Sockeye. Currently not all of them are used in sockeye-recipes; more will be added. See [sockeye/arguments.py](https://github.com/khayrallah/sockeye/blob/master/sockeye/arguments.py) for detailed explanations. 
 
 Alternatively, directly call sockeye with the help option as below. Note that sockeye-recipe hyperameters have the same name as sockeye hyperparameters, except that sockeye-recipe hyperparameters replace the hyphen with underscore (e.g. --num-embed in sockeye becomes $num_embed in sockeye-recipes):
  
